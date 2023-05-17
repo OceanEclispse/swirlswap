@@ -1,0 +1,13 @@
+import { ChainId } from 'swirlswap-core-sdk'
+import MULTICALL_ABI from './abi.json'
+
+const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '0xeefBa1e63905eF1D7ACbA5a8513c70307C1cE441',
+  [ChainId.ROPSTEN]: '0x0E61C8C7BF57C1adB2E109Ab263a11B2C805cef3',
+  [ChainId.KOVAN]: '0x2cc8688C5f75E365aaEEb4ea8D6a480405A48D2A',
+  [ChainId.RINKEBY]: '0x42Ad527de7d4e9d9d011aC45B31D8551f8Fe9821',
+  [ChainId.GÖRLI]: '0x77dCa2C955b15e9dE4dbBCf1246B4B85b651e50e',
+  [ChainId.BSCTEST]: '0x95A9e711a0904e2b943ed2d4F4C9878AfCc5bc3f',
+  [ChainId.CORE]: '0x4A3e7b8E50e41c1848fa98569bc94829C041C26E'
+}
+export { MULTICALL_ABI, MULTICALL_NETWORKS }
